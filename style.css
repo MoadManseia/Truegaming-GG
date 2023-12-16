@@ -514,3 +514,37 @@ h3 {
   padding: 0;
   margin: 0;
 }
+.user-comment {
+  display: flex;
+  gap: 1.2rem;
+  /* background-color: blue; */
+
+  /* background-color: orange; */
+  justify-content: flex-end;
+  align-self: center;
+}
+.user-prof {
+  justify-self: flex-start;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+  margin-right: 0.4rem;
+}
+.user-comm {
+  align-self: center;
+  text-align: right;
+  color: white;
+  line-height: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 0.2rem;
+  margin: 0.2rem 0;
+}
+
+.user {
+  color: #7c7c7c;
+  text-align: end;
+  font-size: 1.2rem;
+}

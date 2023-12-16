@@ -19,7 +19,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  padding: 0 2.4rem;
+  margin: 0 9.6rem;
   font-family: "Noto Kufi Arabic", sans-serif;
 }
 
@@ -151,19 +151,18 @@ img {
 }
 .mw-cover {
   position: relative;
-  width: 100%;
-  height: 100%;
+
   display: grid;
   /* background-color: red; */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2f, 1fr);
+  grid-template-rows: repeat(1fr, 3fr);
   column-gap: 10px;
-  row-gap: 12px;
+  row-gap: -12px;
 }
 .mwc {
-  height: 100%;
-  max-width: 100vh;
-  margin: 1rem 0.4rem;
+  height: 24rem;
+  align-self: stretch;
+  margin: 0rem 0.4rem;
 
   background-color: rgb(208, 226, 43);
   border-top-left-radius: 10px;
@@ -233,18 +232,25 @@ img {
 
   width: 100%;
   height: 100%;
-  /* background-color: rgb(92, 41, 139); */
+  background-color: rgb(92, 41, 139);
 }
 
 .dna-a {
   display: grid;
-  justify-content: stretch;
   grid-template-columns: 1fr 300px;
+  row-gap: 0.8rem;
+  column-gap: 0.8rem;
+}
+.dna-line {
+  height: 2px;
+  grid-column: 1/-1;
+
+  background-color: red;
 }
 .a-img {
-  height: 250px;
+  height: 220px;
   border-radius: 23px;
-  margin: 0.8rem;
+  margin: 1.2rem 0.2rem;
 
   background-size: cover;
   background-position: center;
@@ -266,12 +272,15 @@ img {
 }
 
 .article h5 {
-  font-size: 3.2rem;
+  font-size: 1.8rem;
+  color: #111827;
 }
 .article p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.3rem;
   margin-top: 2rem;
+  margin-left: 2.4rem;
+  color: #111827;
 }
 .bgi {
   background-image: linear-gradient(

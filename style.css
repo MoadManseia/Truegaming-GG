@@ -1,0 +1,516 @@
+/* font-family: 'Noto Kufi Arabic' ,'Readex Pro',;
+ ' */
+
+/* /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEmwM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+/* /*
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0 2.4rem;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+p,
+h6 {
+  color: rgb(185, 185, 185);
+}
+
+li {
+  list-style: none;
+}
+.main-header {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px 1fr;
+  row-gap: 1.4rem;
+  column-gap: 1.2rem;
+  width: 100%;
+  margin-bottom: 12.8rem;
+}
+.row {
+  position: relative;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  grid-column: 1/-1;
+  /* background-color: #ff0000; */
+}
+
+img {
+  width: 220px;
+  margin-left: 2.5rem;
+}
+.title {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-icon {
+  margin-right: auto;
+  padding: 0.4rem;
+}
+.icons {
+  display: block;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: rgb(133, 133, 133);
+  width: 2.4rem;
+  align-items: center;
+
+  height: 2.4rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1.2rem;
+}
+.row-2 {
+  background-image: url(img/gta4.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+}
+.row-3 {
+  background-image: url(img/tekken8.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.headline {
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  right: 0;
+  transform: translate(0, 20%);
+  height: 150px;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0);
+  padding-right: 0.9rem;
+}
+.title-type {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  width: 150px;
+  margin-bottom: 14px;
+}
+.most-wanted {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  height: 600px;
+}
+.mw-title {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-start;
+  width: 100%;
+  height: 4rem;
+  padding: 2px 2px;
+  /* background-color: darkblue; */
+}
+.mw-line {
+  position: absolute;
+  height: 2px;
+  width: 98%;
+  background-color: rgb(255, 0, 0);
+  top: 78%;
+  right: 1%;
+}
+.mw-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  /* background-color: red; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2f, 1fr);
+  column-gap: 10px;
+  row-gap: 12px;
+}
+.mwc {
+  height: 100%;
+  max-width: 100vh;
+  margin: 1rem 0.4rem;
+
+  background-color: rgb(208, 226, 43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+}
+.mwc-a1 {
+  background-image: url(img/mk.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.mwc-a2 {
+  background-image: url(img/tekken8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.mwa {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 4px;
+  text-align: right;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+.mw-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+  height: 30px;
+}
+.mwi {
+  padding: 0 2px;
+  color: rgb(153, 153, 153);
+}
+.daily-news {
+  margin-top: 1.2rem;
+  max-width: 100%;
+  height: 900px;
+  display: grid;
+  grid-template-columns: 350px 2fr;
+  column-gap: 1.2rem;
+}
+.dn-update {
+  display: grid;
+  row-gap: 1.2rem;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.com {
+  background-color: rgb(211, 211, 211);
+}
+
+.best-g {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0.8rem;
+}
+.dn-articles {
+  display: grid;
+
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(92, 41, 139); */
+}
+
+.dna-a {
+  display: grid;
+  justify-content: stretch;
+  grid-template-columns: 1fr 300px;
+}
+.a-img {
+  height: 250px;
+  border-radius: 23px;
+  margin: 0.8rem;
+
+  background-size: cover;
+  background-position: center;
+}
+.ai1 {
+  background-image: url(img/gta4.jpg);
+}
+.ai2 {
+  background-image: url(img/tekken8.jpg);
+}
+.ai3 {
+  background-image: url(img/tekken8.jpg);
+}
+.article {
+  margin-top: 1.4rem;
+  text-align: right;
+  padding: 0 1.2rem;
+  font-size: 2em;
+}
+
+.article h5 {
+  font-size: 3.2rem;
+}
+.article p {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin-top: 2rem;
+}
+.bgi {
+  background-image: linear-gradient(
+      to top,
+      rgba(48, 48, 48, 0.76),
+      rgb(0, 0, 0)
+    ),
+    url(img/TGwall.jpg);
+
+  background-position: bottom;
+}
+.dn-update {
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  align-self: self-start;
+}
+.hot-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.t3 {
+  margin-left: 57%;
+  height: 40px;
+  width: 130px;
+  padding: 0.6rem;
+}
+.t3-v2 {
+  margin-left: 7%;
+  width: 80px;
+}
+.gg {
+  display: flex;
+  gap: 1.2rem;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.ht-num {
+  color: white;
+  border: 3px solid red;
+  padding: 0 2rem;
+  border-radius: 4.6rem;
+}
+.ht-topic {
+  color: #fff;
+}
+
+.bg {
+  background-color: rgb(112, 112, 112);
+  height: 100%;
+  background-position: top;
+  background-size: 12.8rem;
+
+  width: 108px;
+}
+.c2 {
+  padding: 0.4rem;
+  margin-left: 50%;
+  width: 150px;
+}
+.gg-high {
+  column-gap: 0.6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-row: 1fr;
+}
+
+.tt2 {
+  height: 100%;
+}
+.tt3 {
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 70%;
+}
+.n1 {
+  background-image: url(img/wlfd.jpg);
+}
+.n2 {
+  background-image: url(img/smbw.jpeg);
+}
+.n3 {
+  background-image: url(img/re4r.jpg);
+}
+.n4 {
+  background-image: url(img/sm2.jpg);
+}
+.n5 {
+  background-image: url(img/aw2.jpg);
+}
+.n6 {
+  background-image: url(img/sf.jpg);
+}
+.n7 {
+  background-image: url(img/d4.jpg);
+}
+.n8 {
+  background-image: url(img/gc.jpg);
+}
+.ggh-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+}
+.final-sections {
+  gap: 12px;
+  margin-top: 3.2rem;
+  max-width: 100%;
+
+  /* background-color: rgb(68, 255, 0); */
+  grid-column: -3/-1;
+}
+
+.fs-1st {
+  grid-column: 1;
+  background-color: olivedrab;
+  height: fit-content;
+}
+.fs-2nd {
+  grid-column: 2/-1;
+}
+
+.mwt-n2 {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.tt-n2 {
+  color: red;
+  font-size: 1.5rem;
+  height: 32px;
+  position: absolute;
+  left: 0%;
+  transform: translate(2%, -3%);
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid #ff0000;
+  width: 160px;
+}
+.type3 {
+  width: 175px;
+}
+.type4 {
+  width: 105px;
+}
+.latest-game-review {
+  height: 50rem;
+  width: 100%;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 2fr;
+
+  gap: 1.2rem;
+}
+.lastest-update {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  height: 420px;
+  width: 100%;
+}
+.lastest-update-r2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  height: 420px;
+  width: 100%;
+
+  /* background-color: rgb(114, 114, 114); */
+}
+.lu {
+  font-weight: bold;
+  height: 100%;
+  padding: 0 0.8rem;
+  text-align: end;
+  line-height: 1.4;
+  font-size: 2.4rem;
+}
+.lu1 {
+  background-image: url(img/d4.jpg);
+}
+.lu2 {
+  background-image: url(img/re4r.jpg);
+}
+.lu3 {
+  background-image: url(img/gta4.jpg);
+}
+
+.lgr {
+  width: 100%;
+  height: 100;
+  /* background-color: yellow; */
+}
+.mwc-lgr {
+  height: 100%;
+  max-width: none;
+  margin: 0;
+}
+.lgr-nam {
+  padding: 0.8rem;
+  text-align: end;
+  font-size: 1.2rem;
+}
+.lgr-nam p {
+  text-align: right;
+}
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.lgr-pic1 {
+  background-image: url(img/tekken8.jpg);
+}
+.lgr-pic2 {
+  background-image: url(img/.jpg);
+}
+.lgr-pic1 {
+  background-image: url(img/tekken8.jpg);
+}
+.lgr-pic2 {
+  background-image: url(img/smbw.jpeg);
+}
+.lgr-pic3 {
+  background-image: url(img/re4r.jpg);
+}
+.lgr-pic4 {
+  background-image: url(img/sf.jpg);
+}
+.cc {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}

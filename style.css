@@ -19,7 +19,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  margin: 0 9.6rem;
   font-family: "Noto Kufi Arabic", sans-serif;
 }
 
@@ -29,11 +28,14 @@ h1 {
 
 p,
 h6 {
-  color: rgb(185, 185, 185);
+  color: #7c7c7c;
 }
 
 li {
   list-style: none;
+}
+.whitespace {
+  padding: 0 12.8rem;
 }
 .main-header {
   height: 500px;
@@ -123,6 +125,7 @@ img {
   border-bottom-right-radius: 0;
   width: 150px;
   margin-bottom: 14px;
+  transform: translate(0, 4%);
 }
 .most-wanted {
   display: flex;
@@ -139,7 +142,7 @@ img {
   width: 100%;
   height: 4rem;
   padding: 2px 2px;
-  /* background-color: darkblue; */
+  /* background-color: rgb(226, 226, 226); */
 }
 .mw-line {
   position: absolute;
@@ -155,14 +158,14 @@ img {
   display: grid;
   /* background-color: red; */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1fr, 3fr);
-  column-gap: 10px;
-  row-gap: -12px;
+  grid-template-rows: repeat(1fr, 2fr);
+  column-gap: 4.6rem;
+  row-gap: 1.8rem;
 }
 .mwc {
-  height: 24rem;
-  align-self: stretch;
-  margin: 0rem 0.4rem;
+  height: 30rem;
+
+  margin: 0rem 0rem;
 
   background-color: rgb(208, 226, 43);
   border-top-left-radius: 10px;
@@ -198,10 +201,12 @@ img {
   gap: 8px;
   width: 100%;
   height: 30px;
+  fill: red;
 }
+
 .mwi {
   padding: 0 2px;
-  color: rgb(153, 153, 153);
+  color: #7c7c7c;
 }
 .daily-news {
   margin-top: 1.2rem;
@@ -228,29 +233,27 @@ img {
   border-radius: 0.8rem;
 }
 .dn-articles {
-  display: grid;
-
-  width: 100%;
-  height: 100%;
-  background-color: rgb(92, 41, 139);
+  /* background-color: rgb(92, 41, 139); */
 }
 
 .dna-a {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  row-gap: 0.8rem;
+  grid-template-columns: 2fr 0.5fr;
+  row-gap: 0.4rem;
   column-gap: 0.8rem;
 }
 .dna-line {
   height: 2px;
   grid-column: 1/-1;
 
-  background-color: red;
+  background-color: #7c7c7c;
 }
 .a-img {
-  height: 220px;
+  justify-self: end;
+  height: 250px;
+  width: 290px;
   border-radius: 23px;
-  margin: 1.2rem 0.2rem;
+  margin: 1.2rem 0rem;
 
   background-size: cover;
   background-position: center;
@@ -276,11 +279,11 @@ img {
   color: #111827;
 }
 .article p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2.3rem;
-  margin-top: 2rem;
-  margin-left: 2.4rem;
-  color: #111827;
+  margin: 1.4rem 0;
+
+  color: #7c7c7c;
 }
 .bgi {
   background-image: linear-gradient(
@@ -355,7 +358,7 @@ img {
 .tt3 {
   background-size: cover;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y: strat;
   height: 70%;
 }
 .n1 {
@@ -393,17 +396,17 @@ img {
   color: rgb(255, 255, 255);
 }
 .final-sections {
+  /* background-color: #0055ff; */
+  height: fit-content;
   gap: 12px;
   margin-top: 3.2rem;
-  max-width: 100%;
 
-  /* background-color: rgb(68, 255, 0); */
   grid-column: -3/-1;
+  margin-bottom: 3.2rem;
 }
 
 .fs-1st {
   grid-column: 1;
-  background-color: olivedrab;
   height: fit-content;
 }
 .fs-2nd {
@@ -412,6 +415,7 @@ img {
 
 .mwt-n2 {
   position: relative;
+  margin-top: 3.2rem;
   margin-bottom: 2rem;
 }
 
@@ -475,11 +479,6 @@ img {
   background-image: url(img/gta4.jpg);
 }
 
-.lgr {
-  width: 100%;
-  height: 100;
-  /* background-color: yellow; */
-}
 .mwc-lgr {
   height: 100%;
   max-width: none;
@@ -489,6 +488,7 @@ img {
   padding: 0.8rem;
   text-align: end;
   font-size: 1.2rem;
+  height: fit-content;
 }
 .lgr-nam p {
   text-align: right;
@@ -556,4 +556,14 @@ h3 {
   color: #7c7c7c;
   text-align: end;
   font-size: 1.2rem;
+}
+.whitespace .fnalfooter {
+  display: grid;
+  justify-content: flex-end;
+  padding: unset;
+  grid-column: 1/-1;
+  background-color: #525252;
+  width: 100%;
+  height: 50rem;
+  color: aqua;
 }

@@ -183,6 +183,16 @@ img {
   background-size: cover;
   background-position: center;
 }
+.mwc-a3 {
+  background-image: url(img/rockstar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.mwc-a4 {
+  background-image: url(img/marvels-spider-man-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .mwa {
   display: flex;
   gap: 1rem;
@@ -259,13 +269,28 @@ img {
   background-position: center;
 }
 .ai1 {
-  background-image: url(img/gta4.jpg);
+  background-image: url(img/riseor.jpg);
 }
 .ai2 {
-  background-image: url(img/tekken8.jpg);
+  background-image: url(img/mWolv.jpg);
 }
 .ai3 {
-  background-image: url(img/tekken8.jpg);
+  background-image: url(img/ps5-1-960x540.webp);
+}
+.ai4 {
+  background-image: url(img/sunset_overdrive_e3_rollercoaster_1.jpg);
+}
+.ai5 {
+  background-image: url(img/xboxng.webp);
+}
+.ai6 {
+  background-image: url(img/shinji-mikami-to-leave-tango-gameworks-960x540.webp);
+}
+.ai7 {
+  background-image: url(img/Silent-Hill-2-960x538.webp);
+}
+.ai8 {
+  background-image: url(img/DB-Sparking-ZERO-Ann_12-07-23.jpg);
 }
 .article {
   margin-top: 1.4rem;
@@ -483,6 +508,8 @@ img {
   height: 100%;
   max-width: none;
   margin: 0;
+  position: relative;
+  background-color: red;
 }
 .lgr-nam {
   padding: 0.8rem;
@@ -500,22 +527,75 @@ h3 {
 }
 
 .lgr-pic1 {
-  background-image: url(img/tekken8.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(196, 196, 196, 0.192),
+      rgb(0, 0, 0)
+    ),
+    url(img/ghostr2.jpg);
 }
+
 .lgr-pic2 {
-  background-image: url(img/.jpg);
-}
-.lgr-pic1 {
-  background-image: url(img/tekken8.jpg);
-}
-.lgr-pic2 {
-  background-image: url(img/smbw.jpeg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(196, 196, 196, 0.192),
+      rgb(0, 0, 0)
+    ),
+    url(img/smbw.jpeg);
 }
 .lgr-pic3 {
-  background-image: url(img/re4r.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(196, 196, 196, 0.192),
+      rgb(0, 0, 0)
+    ),
+    url(img/lofallen.jpg);
 }
 .lgr-pic4 {
-  background-image: url(img/sf.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(196, 196, 196, 0.192),
+      rgb(0, 0, 0)
+    ),
+    url(img/avatar.jpg);
+}
+
+.lgr-ht-num {
+  display: flex;
+  position: absolute;
+  font-size: 3rem;
+  border: 5px solid red;
+  text-align: center;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.lgr-ht-num h4 {
+  justify-self: center;
+  align-self: center;
+}
+.mwi-lgr {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  top: 70%;
+  right: 0;
+  transform: translate(0, 20%);
+}
+.lgr-icon {
+  color: rgb(134, 134, 134);
+
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.lgr-data {
+  color: rgb(134, 134, 134);
+
+  font-size: 1.4rem;
 }
 .cc {
   width: 100%;
@@ -573,7 +653,7 @@ h3 {
 
   height: 50rem;
   color: aqua;
-  padding: 4.6rem 6.4rem;
+  padding: 9.4rem;
 }
 .footer-column-1 {
   display: flex;
@@ -583,15 +663,16 @@ h3 {
 .footer-column-1 h3 {
   color: white;
   text-align: end;
+  font-size: 6.4;
 }
 .footer-column-1 p {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 
   color: white;
   text-align: end;
 }
 .footer-logo {
-  width: 50rem;
+  width: 30rem;
   align-self: end;
 }
 .footer-nav li {
